@@ -34,7 +34,7 @@ def copy_string(filename: str, data: str):
     """
     Копирование строки
     """
-    with open('copy.txt', 'w', encoding='utf-8') as copy:
+    with open('copy.txt', 'a+', encoding='utf-8') as copy:
             copy.writelines(search_user(number_string, DATA_SOURCE))
        
 INFO_STRING = """
